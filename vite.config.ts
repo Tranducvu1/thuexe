@@ -1,7 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// GitHub Pages: /thuexe/ | Vercel / local: /
+const base = process.env.VITE_BASE || '/'
+
 export default defineConfig({
   plugins: [react()],
+  base,
 })
