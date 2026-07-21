@@ -1,22 +1,23 @@
+import { BRAND, ZALO_URL } from "../config";
 import Reveal from "./Reveal";
 import "./WhyUs.css";
 
 const reasons = [
   {
-    title: "Tư vấn 24/7",
-    desc: "Chọn điểm đi, điểm đến và giờ đón — trung tâm điều phối tài xế phù hợp nhất.",
+    title: "Có mặt 15–20 phút",
+    desc: "Gọi là có — tài xế gần nhất được điều phối đến vị trí của bạn nhanh chóng.",
   },
   {
-    title: "An toàn phương tiện",
-    desc: "Kiểm tra tài sản và xe trước / sau mỗi chuyến, phục vụ chuyên nghiệp.",
+    title: "Phục vụ 24/7",
+    desc: "Ban ngày hay nửa đêm sau tiệc — luôn sẵn sàng đưa bạn và xe về nhà.",
   },
   {
-    title: "Thái độ tận tâm",
-    desc: "Lịch sự, hỗ trợ khách trong suốt hành trình — ưu tiên an toàn tuyệt đối.",
+    title: "An toàn tuyệt đối",
+    desc: "Bạn nghỉ trên ghế phụ, tài xế chuyên nghiệp lái xe của bạn về đúng điểm.",
   },
   {
-    title: "Tài xế giàu kinh nghiệm",
-    desc: "Cung cấp thông tin tài xế rõ ràng, đủ năng lực và trách nhiệm pháp lý.",
+    title: "Giá rõ ràng từ 199k",
+    desc: "Báo giá minh bạch theo quãng đường và khung giờ — không phát sinh ẩn.",
   },
 ];
 
@@ -28,15 +29,20 @@ export default function WhyUs() {
           <div className="why__intro">
             <p className="section-label">Vì sao chọn chúng tôi</p>
             <h2 className="section-title">
-              Nhanh. Chuyên nghiệp.
+              Đã uống?
               <br />
-              Đủ tin để giao chìa khóa.
+              Đừng tự lái.
             </h2>
             <p className="section-lead">
-              CHILLGO tập trung vào trải nghiệm rõ ràng: có mặt nhanh, lái xe
-              chuẩn mực, và bạn luôn biết mình đang đi với ai.
+              {BRAND} chuyên lái xe hộ cho khách đã uống rượu bia — nhanh, lịch
+              sự, bảo mật, đưa bạn và xe về nhà an toàn.
             </p>
-            <a className="btn btn--ink why__btn" href="https://zalo.me/0961132473" target="_blank" rel="noreferrer">
+            <a
+              className="btn btn--ink why__btn"
+              href={ZALO_URL}
+              target="_blank"
+              rel="noreferrer"
+            >
               Nhắn Zalo tư vấn
             </a>
           </div>

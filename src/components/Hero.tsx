@@ -1,4 +1,11 @@
+import { BRAND, PHONE_DISPLAY, PHONE_TEL } from "../config";
 import "./Hero.css";
+
+const highlights = [
+  "Có mặt sau 15–20 phút",
+  "Phục vụ 24/7",
+  "Giá từ 199.000đ",
+];
 
 export default function Hero() {
   return (
@@ -10,19 +17,30 @@ export default function Hero() {
       </div>
 
       <div className="container hero__content">
-        <p className="hero__brand">CHILLGO</p>
+        <p className="hero__brand">{BRAND}</p>
         <h1 className="hero__title">
-          Thuê tài xế
-          <br />
-          an tâm về nhà
+          Dịch vụ
+          <span className="hero__title-accent"> lái xe hộ 24/7</span>
         </h1>
-        <p className="hero__desc">
-          Dịch vụ lái xe hộ chuyên nghiệp — nhanh, lịch sự, bảo mật thông tin
-          khách hàng.
+        <p className="hero__hook">
+          Đã uống rượu bia?{" "}
+          <strong>Chúng tôi đưa bạn và xe về nhà an toàn.</strong>
         </p>
+
+        <ul className="hero__points">
+          {highlights.map((item) => (
+            <li key={item}>
+              <span className="hero__check" aria-hidden>
+                ✓
+              </span>
+              {item}
+            </li>
+          ))}
+        </ul>
+
         <div className="hero__actions">
-          <a className="btn btn--amber" href="tel:0961132473">
-            Gọi ngay 0961 132 473
+          <a className="btn btn--amber" href={PHONE_TEL}>
+            ☎ Gọi ngay {PHONE_DISPLAY}
           </a>
           <a className="btn btn--ghost" href="#dich-vu">
             Xem dịch vụ

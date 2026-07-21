@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { ZALO_URL } from "../config";
 import "./FloatingActions.css";
 
 export default function FloatingActions() {
@@ -15,7 +16,7 @@ export default function FloatingActions() {
     <div className="fab">
       <a
         className="fab__zalo"
-        href="https://zalo.me/0961132473"
+        href={ZALO_URL}
         target="_blank"
         rel="noreferrer"
         aria-label="Chat Zalo"

@@ -8,7 +8,7 @@ const steps = [
   },
   {
     title: "Tài xế đến",
-    desc: "Có mặt khoảng 5–10 phút, xác nhận thông tin chuyến.",
+    desc: "Có mặt khoảng 15–20 phút, xác nhận thông tin chuyến.",
   },
   {
     title: "Bàn giao xe",

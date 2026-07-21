@@ -1,3 +1,4 @@
+import { BRAND, EMAIL, PHONE_DISPLAY, PHONE_TEL, ZALO_URL } from "../config";
 import "./Footer.css";
 
 export default function Footer() {
@@ -5,11 +6,13 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__grid">
         <div className="footer__brand">
-          <img src="/images/logo-footer.png" alt="CHILLGO" />
+          <p className="footer__logo">
+            <span>24/7</span> {BRAND}
+          </p>
           <p>
-            Công ty Cổ phần CHILLGO
+            Dịch vụ lái xe hộ khi bạn đã uống rượu bia.
             <br />
-            S1.02 Vinhomes Smart City, Tây Mỗ, Nam Từ Liêm, Hà Nội
+            Đưa bạn và xe về nhà an toàn — phục vụ 24/7.
           </p>
         </div>
 
@@ -17,13 +20,13 @@ export default function Footer() {
           <h4>Liên hệ</h4>
           <ul>
             <li>
-              <a href="tel:0961132473">0961 132 473</a>
+              <a href={PHONE_TEL}>{PHONE_DISPLAY}</a>
             </li>
             <li>
-              <a href="mailto:goilai24h@gmail.com">goilai24h@gmail.com</a>
+              <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
             </li>
             <li>
-              <a href="https://zalo.me/0961132473" target="_blank" rel="noreferrer">
+              <a href={ZALO_URL} target="_blank" rel="noreferrer">
                 Zalo hỗ trợ
               </a>
             </li>
@@ -68,7 +71,7 @@ export default function Footer() {
       </div>
 
       <div className="footer__copy">
-        © {new Date().getFullYear()} Công ty Cổ phần CHILLGO
+        © {new Date().getFullYear()} {BRAND} — Lái xe hộ 24/7
       </div>
     </footer>
   );

@@ -3,32 +3,32 @@ import "./Testimonials.css";
 
 const feedbacks = [
   {
-    name: "Ông Trần Kim Trung",
-    role: "Chủ tịch CT Group",
+    name: "Anh Minh",
+    role: "Khách thường xuyên",
     photo: "/images/testimonial-1.jpg",
     quote:
-      "Trải nghiệm chuyên nghiệp, thân thiện và hoàn hảo. Sẽ tiếp tục ủng hộ và giới thiệu CHILLGO.",
+      "Uống với bạn bè xong gọi một cái là có tài xế. Xe về nhà an toàn, mình yên tâm.",
   },
   {
-    name: "Ông Bùi Quang Vũ",
-    role: "TGĐ Công ty Phát Đạt",
+    name: "Chị Hương",
+    role: "Văn phòng quận Cầu Giấy",
     photo: "/images/testimonial-2.jpg",
     quote:
-      "Trải nghiệm đi lại tuyệt vời. Tôi tin tưởng kỹ năng và tinh thần phục vụ của đội ngũ Chill Go.",
+      "Sau tiệc công ty hay gọi Tài xế 247. Đến nhanh, thái độ lịch sự, giá rõ ràng.",
   },
   {
-    name: "Ông Đỗ Việt Dũng",
-    role: "CEO Amai Agency",
+    name: "Anh Đức",
+    role: "Khách Hà Nội",
     photo: "/images/testimonial-3.jpg",
     quote:
-      "Chuyên nghiệp, tiện lợi. Tài xế đến đúng giờ và mang lại cảm giác an toàn suốt hành trình.",
+      "Nửa đêm vẫn gọi được. Tài xế đưa mình và xe về tận nhà, rất chuyên nghiệp.",
   },
   {
-    name: "Bà Dương Mai Hoa",
-    role: "TGĐ Sunshine Home",
+    name: "Chị Lan",
+    role: "Khách doanh nghiệp",
     photo: "/images/testimonial-4.jpg",
     quote:
-      "Giải pháp hoàn hảo khi muốn thư giãn trên đường — tập trung công việc, không lo lái xe.",
+      "Đặt cho cả team sau liên hoan. Phục vụ nhanh, đúng giờ, sẽ giới thiệu thêm.",
   },
 ];
 

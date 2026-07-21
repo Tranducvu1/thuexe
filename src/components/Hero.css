@@ -49,29 +49,68 @@
 .hero__brand {
   font-family: var(--display);
   font-size: clamp(1.05rem, 2.4vw, 1.35rem);
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  margin-bottom: 14px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
   color: var(--amber);
 }
 
 .hero__title {
   font-family: "Be Vietnam Pro", system-ui, sans-serif;
-  font-size: clamp(1.85rem, 4.5vw, 3.25rem);
+  font-size: clamp(1.85rem, 4.5vw, 3.1rem);
   font-weight: 700;
-  line-height: 1.45;
-  letter-spacing: 0.03em;
-  margin-bottom: 18px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hero__title-accent {
+  color: var(--amber);
+}
+
+.hero__hook {
+  max-width: 520px;
+  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+  line-height: 1.55;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 22px;
+}
+
+.hero__hook strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+.hero__points {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.hero__points li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.4;
   color: #fff;
 }
 
-.hero__desc {
-  max-width: 440px;
-  font-size: 1.05rem;
-  line-height: 1.65;
-  letter-spacing: 0.01em;
-  color: rgba(255, 255, 255, 0.88);
-  margin-bottom: 28px;
+.hero__check {
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--amber);
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 800;
+  flex-shrink: 0;
 }
 
 .hero__actions {
@@ -137,23 +176,28 @@
   }
 
   .hero__brand {
-    font-size: 0.92rem;
-    letter-spacing: 0.14em;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    margin-bottom: 8px;
   }
 
   .hero__title {
-    font-size: 1.8rem;
-    line-height: 1.42;
-    letter-spacing: 0.025em;
+    font-size: 1.65rem;
+    line-height: 1.35;
     margin-bottom: 12px;
   }
 
-  .hero__desc {
-    font-size: 0.94rem;
-    max-width: none;
-    margin-bottom: 20px;
-    padding-right: 8px;
+  .hero__hook {
+    font-size: 1.02rem;
+    margin-bottom: 16px;
+  }
+
+  .hero__points {
+    gap: 8px;
+    margin-bottom: 22px;
+  }
+
+  .hero__points li {
+    font-size: 0.95rem;
   }
 
   .hero__actions {
@@ -166,11 +210,11 @@
 
 @media (max-width: 480px) {
   .hero__title {
-    font-size: 1.6rem;
+    font-size: 1.45rem;
   }
 
-  .hero__desc {
-    font-size: 0.9rem;
+  .hero__hook {
+    font-size: 0.95rem;
   }
 
   .hero__actions {

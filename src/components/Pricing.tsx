@@ -1,3 +1,4 @@
+import { PHONE_TEL } from "../config";
 import Reveal from "./Reveal";
 import "./Pricing.css";
 
@@ -5,27 +6,27 @@ const rows = [
   {
     time: "Trước 22h",
     cells: [
-      ["5km đầu", "245k"],
-      ["5 – 10km", "245k (+20k/km)"],
-      [">10km", "345k (+15k/km)"],
+      ["5km đầu", "199k"],
+      ["5 – 10km", "199k (+20k/km)"],
+      [">10km", "299k (+15k/km)"],
       [">30km", "Thỏa thuận"],
     ],
   },
   {
     time: "22h – 24h",
     cells: [
-      ["5km đầu", "260k"],
-      ["5 – 10km", "260k (+20k/km)"],
-      [">10km", "360k (+15k/km)"],
+      ["5km đầu", "229k"],
+      ["5 – 10km", "229k (+20k/km)"],
+      [">10km", "329k (+15k/km)"],
       [">30km", "Thỏa thuận"],
     ],
   },
   {
     time: "Sau 24h",
     cells: [
-      ["5km đầu", "299k"],
-      ["5 – 10km", "299k (+20k/km)"],
-      [">10km", "399k (+20k/km)"],
+      ["5km đầu", "259k"],
+      ["5 – 10km", "259k (+20k/km)"],
+      [">10km", "359k (+20k/km)"],
       [">30km", "Thỏa thuận"],
     ],
   },
@@ -40,11 +41,11 @@ export default function Pricing() {
           <div className="section-head section-head--center">
             <p className="section-label pricing__label">Bảng giá</p>
             <h2 className="section-title pricing__title">
-              Báo giá lái xe hộ theo chuyến
+              Giá từ 199.000đ — minh bạch theo chuyến
             </h2>
             <p className="section-lead pricing__lead">
-              Minh bạch theo khung giờ và quãng đường. Gói theo ngày / sự kiện /
-              doanh nghiệp — liên hệ để nhận báo giá.
+              Báo giá rõ theo khung giờ và quãng đường. Gói theo ngày / sự kiện /
+              doanh nghiệp — gọi để nhận báo giá nhanh.
             </p>
           </div>
         </Reveal>
@@ -93,8 +94,8 @@ export default function Pricing() {
 
         <Reveal delay={120}>
           <div className="pricing__footer">
-            <a className="btn btn--amber" href="tel:0961132473">
-              Liên hệ báo giá
+            <a className="btn btn--amber" href={PHONE_TEL}>
+              ☎ Gọi báo giá
             </a>
           </div>
         </Reveal>

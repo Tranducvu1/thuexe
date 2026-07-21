@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { BRAND, PHONE_DISPLAY, PHONE_TEL } from "../config";
 import "./Header.css";
 
 const links = [
@@ -33,8 +34,11 @@ export default function Header() {
       className={`header ${scrolled ? "header--scrolled" : ""} ${open ? "header--open" : ""}`}
     >
       <div className="container header__inner">
-        <a href="#top" className="header__brand" aria-label="CHILLGO" onClick={close}>
-          <img src="/images/logo.png" alt="CHILLGO thuê lái xe" />
+        <a href="#top" className="header__brand" aria-label={BRAND} onClick={close}>
+          <span className="header__mark">24/7</span>
+          <span className="header__name">
+            Tài xế <strong>247</strong>
+          </span>
         </a>
 
         <nav className={`header__nav ${open ? "is-open" : ""}`}>
@@ -43,8 +47,8 @@ export default function Header() {
               {link.label}
             </a>
           ))}
-          <a className="header__phone" href="tel:0961132473" onClick={close}>
-            0961 132 473
+          <a className="header__phone" href={PHONE_TEL} onClick={close}>
+            {PHONE_DISPLAY}
           </a>
         </nav>
 

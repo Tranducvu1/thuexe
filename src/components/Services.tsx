@@ -1,10 +1,15 @@
+import { BRAND, PHONE_TEL } from "../config";
 import Reveal from "./Reveal";
 import "./Services.css";
 
 const services = [
   {
+    title: "Lái xe hộ về nhà",
+    desc: "Đã uống rượu bia? Tài xế đến đón, đưa bạn và xe về nhà an toàn.",
+  },
+  {
     title: "Lái xe theo chuyến",
-    desc: "Phục vụ theo lộ trình đã đặt — phù hợp tiếp khách, liên hoan, chúc Tết.",
+    desc: "Phục vụ theo lộ trình đã đặt — phù hợp tiếp khách, liên hoan, về sớm.",
   },
   {
     title: "Lái xe theo giờ",
@@ -15,12 +20,8 @@ const services = [
     desc: "Công tác, về quê, chơi golf… tài xế phục vụ đúng nhu cầu đã đăng ký.",
   },
   {
-    title: "Lái xe doanh nghiệp",
-    desc: "Đặt theo giờ, theo chuyến hoặc theo ngày — họp mặt, sự kiện, vận chuyển hàng hóa.",
-  },
-  {
-    title: "Lái xe sự kiện",
-    desc: "Điều phối theo lộ trình và khung giờ đã chốt cho tiệc, hội nghị, tổ chức sự kiện.",
+    title: "Lái xe doanh nghiệp / sự kiện",
+    desc: "Đặt theo giờ, theo chuyến hoặc theo ngày — họp mặt, tiệc, vận chuyển.",
   },
 ];
 
@@ -31,10 +32,12 @@ export default function Services() {
         <Reveal>
           <div className="section-head">
             <p className="section-label">Dịch vụ</p>
-            <h2 className="section-title">Một tài xế. Mọi nhu cầu di chuyển.</h2>
+            <h2 className="section-title">
+              Uống xong. Gọi {BRAND}. Về nhà an toàn.
+            </h2>
             <p className="section-lead">
-              Từ chuyến ngắn trong phố đến lịch trình cả ngày — chọn gói phù hợp,
-              còn lại để CHILLGO lo.
+              Chuyên lái xe hộ khi khách đã uống bia rượu — có mặt nhanh, phục vụ
+              24/7, còn lại để chúng tôi lo.
             </p>
           </div>
         </Reveal>
@@ -48,8 +51,8 @@ export default function Services() {
                   <h3>{item.title}</h3>
                   <p>{item.desc}</p>
                 </div>
-                <a className="service-row__cta" href="tel:0961132473">
-                  Đặt ngay
+                <a className="service-row__cta" href={PHONE_TEL}>
+                  Gọi ngay
                 </a>
               </article>
             </Reveal>
