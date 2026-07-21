@@ -1,0 +1,110 @@
+.services {
+  background:
+    radial-gradient(ellipse at 0% 0%, rgba(19, 87, 166, 0.06), transparent 45%),
+    var(--snow);
+}
+
+.services__list {
+  display: grid;
+  gap: 12px;
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: 72px 1fr auto;
+  gap: 20px;
+  align-items: center;
+  padding: 26px 28px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  transition:
+    transform 0.3s var(--ease),
+    box-shadow 0.3s var(--ease),
+    border-color 0.3s ease;
+}
+
+.service-row:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+  border-color: rgba(19, 87, 166, 0.2);
+}
+
+.service-row__index {
+  font-family: var(--display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--amber-deep);
+  letter-spacing: 0.02em;
+}
+
+.service-row__body h3 {
+  font-family: var(--display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.4;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+
+.service-row__body p {
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.55;
+  max-width: 640px;
+}
+
+.service-row__cta {
+  font-weight: 700;
+  color: var(--blue);
+  padding: 10px 14px;
+  border-radius: 10px;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.service-row__cta:hover {
+  background: var(--blue-soft);
+}
+
+@media (max-width: 1024px) {
+  .service-row {
+    grid-template-columns: 56px 1fr auto;
+    gap: 14px;
+    padding: 22px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-row {
+    grid-template-columns: 40px 1fr;
+    gap: 12px 14px;
+    padding: 18px 16px;
+    border-radius: 16px;
+  }
+
+  .service-row:hover {
+    transform: none;
+  }
+
+  .service-row__index {
+    font-size: 1.05rem;
+    padding-top: 2px;
+  }
+
+  .service-row__body h3 {
+    font-size: 1.05rem;
+  }
+
+  .service-row__body p {
+    font-size: 0.9rem;
+  }
+
+  .service-row__cta {
+    grid-column: 2;
+    justify-self: start;
+    padding: 8px 0 0;
+    font-size: 0.92rem;
+  }
+}

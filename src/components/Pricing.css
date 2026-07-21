@@ -1,0 +1,134 @@
+.pricing {
+  position: relative;
+  overflow: hidden;
+  color: var(--white);
+  background: var(--ink);
+}
+
+.pricing__bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(7, 21, 37, 0.88), rgba(7, 21, 37, 0.92)),
+    url("/images/bg-bang-gia.jpg") center / cover no-repeat;
+}
+
+.pricing__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.pricing__label {
+  color: var(--amber);
+}
+
+.pricing__title,
+.pricing__lead {
+  color: var(--white);
+}
+
+.pricing__lead {
+  opacity: 0.85;
+}
+
+.pricing__table-wrap {
+  overflow-x: auto;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  -webkit-overflow-scrolling: touch;
+}
+
+.pricing__table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+}
+
+.pricing__table th,
+.pricing__table td {
+  padding: 18px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.95rem;
+}
+
+.pricing__table th {
+  font-family: var(--display);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 700;
+}
+
+.pricing__table td:first-child {
+  font-weight: 700;
+  color: var(--amber);
+}
+
+.pricing__table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing__mobile {
+  display: none;
+}
+
+.pricing__cards {
+  display: grid;
+  gap: 12px;
+}
+
+.price-card {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 18px 16px;
+}
+
+.price-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--amber);
+  margin-bottom: 12px;
+}
+
+.price-card li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.92rem;
+}
+
+.price-card li span {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.price-card li strong {
+  font-weight: 700;
+  text-align: right;
+}
+
+.pricing__footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+@media (max-width: 768px) {
+  .pricing__desktop {
+    display: none;
+  }
+
+  .pricing__mobile {
+    display: grid;
+  }
+
+  .pricing__footer .btn {
+    max-width: 360px;
+  }
+}
