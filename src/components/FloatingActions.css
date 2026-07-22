@@ -1,24 +1,24 @@
-.fab {
+.fab--contact {
   position: fixed;
-  right: 16px;
+  left: 16px;
   bottom: calc(18px + var(--safe-bottom));
   z-index: 120;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
   align-items: center;
 }
 
 .fab__call {
   position: relative;
-  width: 54px;
-  height: 54px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   display: grid;
   place-items: center;
   background: #16a34a;
   color: #fff;
-  box-shadow: 0 12px 28px rgba(22, 163, 74, 0.4);
+  box-shadow: 0 14px 32px rgba(22, 163, 74, 0.45);
   transition: transform 0.25s var(--ease);
 }
 
@@ -29,8 +29,8 @@
 .fab__call-icon {
   position: relative;
   z-index: 1;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   display: block;
 }
 
@@ -65,11 +65,11 @@
 }
 
 .fab__zalo {
-  width: 54px;
-  height: 54px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 12px 28px rgba(0, 104, 255, 0.35);
+  box-shadow: 0 14px 32px rgba(0, 104, 255, 0.4);
   background: #0068ff;
   transition: transform 0.25s var(--ease);
 }
@@ -84,7 +84,11 @@
   object-fit: cover;
 }
 
-.fab__top {
+.fab--top {
+  position: fixed;
+  right: 16px;
+  bottom: calc(18px + var(--safe-bottom));
+  z-index: 120;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -95,35 +99,38 @@
   box-shadow: 0 10px 22px rgba(242, 183, 5, 0.35);
 }
 
-.fab__top:hover {
+.fab--top:hover {
   transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
-  .fab {
-    right: 10px;
+  .fab--contact {
+    left: 12px;
     bottom: calc(16px + var(--safe-bottom));
+    gap: 12px;
   }
 
   .fab__call,
   .fab__zalo {
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
   }
 
   .fab__call-icon {
-    width: 22px;
-    height: 22px;
+    width: 28px;
+    height: 28px;
   }
 
-  .fab__top {
+  .fab--top {
+    right: 10px;
+    bottom: calc(16px + var(--safe-bottom));
     width: 42px;
     height: 42px;
   }
 
   .fab__call:hover,
   .fab__zalo:hover,
-  .fab__top:hover {
+  .fab--top:hover {
     transform: none;
   }
 }
