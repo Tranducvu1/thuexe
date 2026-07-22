@@ -4,7 +4,7 @@ import "./Hero.css";
 const highlights = [
   "Có mặt sau 15–20 phút",
   "Phục vụ 24/7",
-  "Giá từ 199.000đ",
+  "Giá từ 230.000đ",
 ];
 
 export default function Hero() {

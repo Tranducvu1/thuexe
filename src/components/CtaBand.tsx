@@ -14,7 +14,7 @@ export default function CtaBand() {
               <span>Gọi Tài xế 247 ngay.</span>
             </h2>
             <p className="cta-band__desc">
-              Có mặt sau 15–20 phút · Phục vụ 24/7 · Giá từ 199.000đ
+              Có mặt sau 15–20 phút · Phục vụ 24/7 · Giá từ 230.000đ
             </p>
             <div className="cta-band__actions">
               <a className="btn btn--amber" href={PHONE_TEL}>

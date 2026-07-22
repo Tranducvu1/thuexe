@@ -6,18 +6,18 @@ const rows = [
   {
     time: "Trước 22h",
     cells: [
-      ["5km đầu", "199k"],
-      ["5 – 10km", "199k (+20k/km)"],
-      [">10km", "299k (+15k/km)"],
+      ["5km đầu", "230k"],
+      ["5 – 10km", "230k (+20k/km)"],
+      [">10km", "320k (+15k/km)"],
       [">30km", "Thỏa thuận"],
     ],
   },
   {
     time: "22h – 24h",
     cells: [
-      ["5km đầu", "229k"],
-      ["5 – 10km", "229k (+20k/km)"],
-      [">10km", "329k (+15k/km)"],
+      ["5km đầu", "250k"],
+      ["5 – 10km", "250k (+20k/km)"],
+      [">10km", "330k (+15k/km)"],
       [">30km", "Thỏa thuận"],
     ],
   },
@@ -26,7 +26,7 @@ const rows = [
     cells: [
       ["5km đầu", "259k"],
       ["5 – 10km", "259k (+20k/km)"],
-      [">10km", "359k (+20k/km)"],
+      [">10km", "359k (+15k/km)"],
       [">30km", "Thỏa thuận"],
     ],
   },
@@ -41,7 +41,7 @@ export default function Pricing() {
           <div className="section-head section-head--center">
             <p className="section-label pricing__label">Bảng giá</p>
             <h2 className="section-title pricing__title">
-              Giá từ 199.000đ — minh bạch theo chuyến
+              Giá từ 230.000đ — minh bạch theo chuyến
             </h2>
             <p className="section-lead pricing__lead">
               Báo giá rõ theo khung giờ và quãng đường. Gói theo ngày / sự kiện /

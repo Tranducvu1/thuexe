@@ -16,7 +16,7 @@ const reasons = [
     desc: "Bạn nghỉ trên ghế phụ, tài xế chuyên nghiệp lái xe của bạn về đúng điểm.",
   },
   {
-    title: "Giá rõ ràng từ 199k",
+    title: "Giá rõ ràng từ 230k",
     desc: "Báo giá minh bạch theo quãng đường và khung giờ — không phát sinh ẩn.",
   },
 ];
