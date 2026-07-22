@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section className="hero" id="top">
       <div className="hero__media" aria-hidden>
-        <img src="/images/hero-bg.jpg" alt="" className="hero__img" />
+        <img src="/images/hero-driver.jpg" alt="" className="hero__img" />
         <div className="hero__shade" />
         <div className="hero__grain" />
       </div>
