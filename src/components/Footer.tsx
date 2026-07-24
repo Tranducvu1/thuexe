@@ -10,7 +10,7 @@ export default function Footer() {
             <span>24/7</span> {BRAND}
           </p>
           <p>
-            Dịch vụ lái xe hộ khi bạn đã uống rượu bia.
+            Dịch vụ lái xe hộ chuyên nghiệp.
             <br />
             Đưa bạn và xe về nhà an toàn — phục vụ 24/7.
           </p>

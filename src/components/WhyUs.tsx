@@ -9,7 +9,7 @@ const reasons = [
   },
   {
     title: "Phục vụ 24/7",
-    desc: "Ban ngày hay nửa đêm sau tiệc — luôn sẵn sàng đưa bạn và xe về nhà.",
+    desc: "Ban ngày hay nửa đêm — luôn sẵn sàng đưa bạn và xe về nhà.",
   },
   {
     title: "An toàn tuyệt đối",
@@ -29,13 +29,13 @@ export default function WhyUs() {
           <div className="why__intro">
             <p className="section-label">Vì sao chọn chúng tôi</p>
             <h2 className="section-title">
-              Đã uống?
+              Không tiện tự lái?
               <br />
-              Đừng tự lái.
+              Để chúng tôi lo.
             </h2>
             <p className="section-lead">
-              {BRAND} chuyên lái xe hộ cho khách đã uống rượu bia — nhanh, lịch
-              sự, bảo mật, đưa bạn và xe về nhà an toàn.
+              {BRAND} chuyên lái xe hộ — nhanh, lịch sự, bảo mật, đưa bạn và xe
+              về nhà an toàn.
             </p>
             <a
               className="btn btn--ink why__btn"

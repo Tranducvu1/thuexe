@@ -23,7 +23,7 @@ export default function Hero() {
           <span className="hero__title-accent"> lái xe hộ 24/7</span>
         </h1>
         <p className="hero__hook">
-          Đã uống rượu bia?{" "}
+          Không tiện tự lái?{" "}
           <strong>Chúng tôi đưa bạn và xe về nhà an toàn.</strong>
         </p>
 

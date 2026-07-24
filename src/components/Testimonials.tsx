@@ -7,14 +7,14 @@ const feedbacks = [
     role: "Khách thường xuyên",
     photo: "/images/testimonial-1.jpg",
     quote:
-      "Uống với bạn bè xong gọi một cái là có tài xế. Xe về nhà an toàn, mình yên tâm.",
+      "Gọi một cái là có tài xế. Xe về nhà an toàn, mình yên tâm.",
   },
   {
     name: "Chị Hương",
     role: "Văn phòng quận Cầu Giấy",
     photo: "/images/testimonial-2.jpg",
     quote:
-      "Sau tiệc công ty hay gọi Tài xế 247. Đến nhanh, thái độ lịch sự, giá rõ ràng.",
+      "Hay gọi Tài xế 247 sau giờ làm. Đến nhanh, thái độ lịch sự, giá rõ ràng.",
   },
   {
     name: "Anh Đức",
@@ -28,7 +28,7 @@ const feedbacks = [
     role: "Khách doanh nghiệp",
     photo: "/images/testimonial-4.jpg",
     quote:
-      "Đặt cho cả team sau liên hoan. Phục vụ nhanh, đúng giờ, sẽ giới thiệu thêm.",
+      "Đặt cho cả team sau họp mặt. Phục vụ nhanh, đúng giờ, sẽ giới thiệu thêm.",
   },
 ];
 

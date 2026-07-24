@@ -5,11 +5,11 @@ import "./Services.css";
 const services = [
   {
     title: "Lái xe hộ về nhà",
-    desc: "Đã uống rượu bia? Tài xế đến đón, đưa bạn và xe về nhà an toàn.",
+    desc: "Không tiện tự lái? Tài xế đến đón, đưa bạn và xe về nhà an toàn.",
   },
   {
     title: "Lái xe theo chuyến",
-    desc: "Phục vụ theo lộ trình đã đặt — phù hợp tiếp khách, liên hoan, về sớm.",
+    desc: "Phục vụ theo lộ trình đã đặt — phù hợp tiếp khách, công tác, về sớm.",
   },
   {
     title: "Lái xe theo giờ",
@@ -21,7 +21,7 @@ const services = [
   },
   {
     title: "Lái xe doanh nghiệp / sự kiện",
-    desc: "Đặt theo giờ, theo chuyến hoặc theo ngày — họp mặt, tiệc, vận chuyển.",
+    desc: "Đặt theo giờ, theo chuyến hoặc theo ngày — họp mặt, sự kiện, vận chuyển.",
   },
 ];
 
@@ -33,11 +33,11 @@ export default function Services() {
           <div className="section-head">
             <p className="section-label">Dịch vụ</p>
             <h2 className="section-title">
-              Uống xong. Gọi {BRAND}. Về nhà an toàn.
+              Cần tài xế? Gọi {BRAND}. Về nhà an toàn.
             </h2>
             <p className="section-lead">
-              Chuyên lái xe hộ khi khách đã uống bia rượu — có mặt nhanh, phục vụ
-              24/7, còn lại để chúng tôi lo.
+              Chuyên lái xe hộ — có mặt nhanh, phục vụ 24/7, còn lại để chúng tôi
+              lo.
             </p>
           </div>
         </Reveal>

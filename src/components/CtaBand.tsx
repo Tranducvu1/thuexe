@@ -10,7 +10,7 @@ export default function CtaBand() {
           <div className="cta-band__copy">
             <p className="section-label cta-band__label">Sẵn sàng về nhà</p>
             <h2 className="cta-band__title">
-              Đã uống rượu bia?
+              Cần về nhà an toàn?
               <span>Gọi Tài xế 247 ngay.</span>
             </h2>
             <p className="cta-band__desc">
